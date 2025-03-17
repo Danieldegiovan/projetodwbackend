@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Controlador de Domínio - MonitorX</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AD MonitorX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#login-section">Login</a></li>
+                <li><a href="#informacoes">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Seção de Login -->
+    <section id="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu usuário" required>
+                
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+                
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+        </div>
+
+    </section><h2>Registrar</h2>
+    <form id="register-form">
+        <input type="text" id="new-username" placeholder="Novo Usuário" required>
+        <input type="password" id="new-password" placeholder="Senha" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <!-- Modal for Registration -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <p id="register-message"></p>
+        <button id="close-register-modal">Fechar</button>
+    </div>
+</div>
+
+    <p id="register-message"></p>
+    
+
+    <!-- Seção de Informações -->
+    <section id="informacoes">
+        <h2>Sobre o MonitorX</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <span class="material-icons icon">update</span>
+                <h3>Monitoramento em Tempo Real</h3>
+                <p>Monitore o status do seu controlador de domínio em tempo real, com informações sobre disponibilidade e performance.</p>
+            </div>
+            <div class="info-card">
+                <span class="material-icons icon">notifications_active</span>
+                <h3>Alertas Automáticos</h3>
+                <p>Receba notificações instantâneas caso problemas sejam detectados no controlador de domínio.</p>
+            </div>
+            <div class="info-card">
+                <span class="material-icons icon">bar_chart</span>
+                <h3>Relatórios Detalhados</h3>
+                <p>Gere relatórios completos com gráficos e métricas sobre a saúde e o desempenho do controlador de domínio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações ou suporte, entre em contato conosco através dos e-mails <a href="mailto:lira.marcelo@academico.ifpb.edu.br">lira.marcelo@academico.ifpb.edu.br</a> & <a href="mailto:daniel.giovanni@academico.ifpb.edu.br">daniel.giovanni@academico.ifpb.edu.br</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MonitorX - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal de Sucesso -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-message">Login bem-sucedido!</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+    
+    
+
+    <script type="module" src="/frontend/js/main.js"></script>
+</body>
+</html>

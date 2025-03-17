@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/frontend/css/style.css">
+  <link rel="stylesheet" href="/frontend/css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Dashboard</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">LOGOUT</a></li>
+  
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main id="dashboard">
+    <!-- Sessão de monitoramento -->
+    <section id="monitoring">
+      <h2>Monitoramento de Logins no Domínio</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="icon">⏱️</div>
+          <h3>Última 1 Hora</h3>
+          <p id="logins-1h">Carregando...</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">⏳</div>
+          <h3>Últimas 12 Horas</h3>
+          <p id="logins-12h">Carregando...</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">🕰️</div>
+          <h3>Últimas 24 Horas</h3>
+          <p id="logins-24h">Carregando...</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📅</div>
+          <h3>Última Semana</h3>
+          <p id="logins-1w">Carregando...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de desempenho -->
+    <section id="performance">
+      <h2>Desempenho do Servidor</h2>
+      <div class="chart-container">
+        <canvas id="memory-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- Sessão de backups -->
+    <section id="backups">
+      <h2>Últimos Backups</h2>
+      <ul id="backup-list">
+        <li>Carregando informações de backups...</li>
+      </ul>
+    </section>
+
+    <!-- Sessão extra -->
+    <section id="extra-info">
+      <h2>Informações Adicionais</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="icon">🔌</div>
+          <h3>Status do Sistema</h3>
+          <p id="system-status">Carregando...</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">🌐</div>
+          <h3>Conexões Ativas</h3>
+          <p id="active-connections">Carregando...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Dashboard</p>
+  </footer>
+  <script src="/frontend/js/dashboard.js"></script>
+</body>
+</html>

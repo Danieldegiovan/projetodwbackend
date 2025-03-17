@@ -1,0 +1,107 @@
+/* Estilos gerais do dashboard */
+#dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sessões do dashboard */
+  #monitoring, #performance, #backups, #extra-info {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Títulos das sessões */
+  #monitoring h2, #performance h2, #backups h2, #extra-info h2 {
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 10px;
+  }
+  
+  /* Cartões de informações */
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .info-card {
+    background-color: #444;
+    padding: 20px;
+    width: calc(25% - 20px); /* Quatro cartões por linha */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #FFD700;
+  }
+  
+  .info-card h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .info-card p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  /* Lista de backups */
+  #backup-list {
+    list-style-type: none;
+    padding: 0;
+    color: #ddd;
+    font-size: 16px;
+  }
+  
+  #backup-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gráfico */
+  .chart-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  canvas {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
